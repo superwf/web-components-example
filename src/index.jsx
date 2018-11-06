@@ -6,10 +6,11 @@ import ReactApp from './ReactApp'
 import VueApp from './VueApp.vue'
 import './index.less'
 
-window.customElements.define('share-component', ShareComponent)
+global.customElements.define('share-component', ShareComponent)
 
 render(<ReactApp />, document.querySelector('#reactApp'))
 
+// must tell vue this element tag is already defined
 Vue.config.ignoreElements = ['share-component']
 
 new Vue({
