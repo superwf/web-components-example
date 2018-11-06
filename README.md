@@ -46,3 +46,10 @@ Can __NOT__ be used in IE AND EDGE.
 ## Reference
 
 [shadowdom](https://developers.google.com/web/fundamentals/web-components/shadowdom)
+
+## Usage
+
+```bash
+yarn
+yarn start
+```
