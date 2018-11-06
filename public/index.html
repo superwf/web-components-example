@@ -13,6 +13,13 @@
 </head>
 <body>
   <div>
+    web component 样式在shadowDom组件内部定义
+    <code>
+      button { color: blue; }
+    </code>
+    不会影响外部环境
+  </div>
+  <div>
     <header>原生按钮</header>
     <share-component sku="8477015" />
   </div>
@@ -28,7 +35,10 @@
   </div>
   <hr />
   <div>
-    <header>外部button</header>
+    <header>外部button受全局样式控制</header>
+    <code>
+      button { color: red; }
+    </code>
     <button>button</button>
     <p>web component 内部与外部样式互相独立</p>
   </div>

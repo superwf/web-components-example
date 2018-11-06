@@ -1,5 +1,8 @@
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 const vueLoader = require('vue-loader')
+const opn = require('opn')
+
+const port = 3010
 
 module.exports = {
   entry: './src/index.jsx',
@@ -93,8 +96,11 @@ module.exports = {
     hot: true,
     disableHostCheck: true,
     contentBase: './public',
-    port: 3010,
+    port,
     https: false,
+    after: () => {
+      opn(`http://localhost:${port}`)
+    },
   },
   plugins: [
     new HtmlWebpackPlugin({

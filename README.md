@@ -38,3 +38,11 @@ then in `.vue` file template
 ```js
 <share-component sku="8477015" />
 ```
+
+## NOTICE
+
+Can __NOT__ be used in IE AND EDGE.
+
+## Reference
+
+[shadowdom](https://developers.google.com/web/fundamentals/web-components/shadowdom)
