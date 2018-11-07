@@ -84,10 +84,21 @@ module.exports = {
         test: /\.vue$/,
         loader: 'vue-loader',
       },
+      {
+        test: /\.md$/,
+        use: [
+          {
+            loader: 'html-loader',
+          },
+          {
+            loader: 'markdown-loader',
+          },
+        ],
+      },
     ],
   },
   resolve: {
-    extensions: ['.js', '.jsx', '.less', '.vue'],
+    extensions: ['.js', '.jsx', '.less', '.vue', '.md'],
   },
   devServer: {
     historyApiFallback: true,

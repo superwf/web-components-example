@@ -13,6 +13,9 @@ module.exports = {
     semi: [2, 'never'],
     'valid-jsdoc': 2,
     'no-debugger': 0,
+    'no-console': 0,
+    'no-param-reassign': 0,
+    'class-methods-use-this': 0,
     'react-native/no-inline-styles': 2,
     'import/no-extraneous-dependencies': [
       'error',

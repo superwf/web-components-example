@@ -46,6 +46,7 @@ Can __NOT__ be used in IE AND EDGE.
 ## Reference
 
 [shadowdom](https://developers.google.com/web/fundamentals/web-components/shadowdom)
+[web components](https://developer.mozilla.org/zh-CN/docs/Web/Web_Components)
 
 ## Usage
 
