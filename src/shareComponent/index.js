@@ -3,18 +3,17 @@ import fetch from './fetch'
 class ShareComponent extends HTMLElement {
   constructor(...args) {
     super(...args)
-    const shadowRoot = this.attachShadow({ mode: 'closed' })
-    console.log(this.shadowRoot)
+    const shadowRoot = this.attachShadow({ mode: 'open' })
+    // mode为closed，则之后不能获取this.shadowRoot
+    // mode为open，则之后可以获取this.shadowRoot
+    // 所以说mode总应该被设置为open
+    // console.log(this.shadowRoot)
     // console.log(this._root === this.shadowRoot)
     const sku = this.getAttribute('sku')
     const style = document.createElement('style')
     style.textContent = 'button { color: blue; }'
     const button = document.createElement('button')
     button.textContent = `点击获取sku: ${sku}商品`
-    // this.shadowRoot.innerHTML = `
-    // <style>button { color: blue; }</style>
-    // <button>点击获取sku: ${sku}商品</button>`
-    // const button = this.shadowRoot.querySelector('button')
     shadowRoot.appendChild(style)
     shadowRoot.appendChild(button)
     const fetchSku = () => {

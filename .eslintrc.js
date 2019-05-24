@@ -17,6 +17,7 @@ module.exports = {
     'no-param-reassign': 0,
     'class-methods-use-this': 0,
     'react-native/no-inline-styles': 2,
+    'react/prop-types': 0,
     'import/no-extraneous-dependencies': [
       'error',
       {

@@ -8,6 +8,8 @@
   },
   "dependencies": {
     "fxios": "^0.5.2",
+    "mobx": "^5.9.4",
+    "mobx-react": "^5.4.4",
     "react": "^16.6.0",
     "react-dom": "^16.6.0",
     "vue": "^2.5.17"

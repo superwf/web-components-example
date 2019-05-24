@@ -2,12 +2,14 @@ import React from 'react'
 import { render } from 'react-dom'
 import Vue from 'vue'
 import ShareComponent from './shareComponent'
+import ShareComponentReact from './shareComponent/react'
 import ReactApp from './ReactApp'
 import VueApp from './VueApp.vue'
 import './index.less'
 import readme from './readme.md'
 
 global.customElements.define('share-component', ShareComponent)
+global.customElements.define('share-componentreact', ShareComponentReact)
 
 render(<ReactApp />, document.querySelector('#reactApp'))
 
